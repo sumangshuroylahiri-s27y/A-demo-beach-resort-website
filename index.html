@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Azure Shores Resort — A luxury beachside escape on the crystal-clear coast. Book your stay for an unforgettable ocean retreat with world-class amenities." />
+  <meta name="keywords" content="luxury resort, beachside resort, ocean retreat, beach vacation, azure shores, resort booking, beach hotel" />
+  <meta name="author" content="Azure Shores Resort" />
+  <meta property="og:title" content="Azure Shores Resort — Luxury Beachside Escape" />
+  <meta property="og:description" content="Discover paradise at Azure Shores. Crystal waters, white sands, and world-class luxury await you." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://azureshoresresort.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://azureshoresresort.com" />
+  <title>Azure Shores Resort — Luxury Beachside Escape</title>
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="nav-container">
+      <a href="#home" class="logo" aria-label="Azure Shores Resort Home">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Azure Shores</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#rooms" class="nav-cta">Book Now</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+      <ul>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#rooms" class="mobile-link">Rooms</a></li>
+        <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+        <li><a href="#amenities" class="mobile-link">Amenities</a></li>
+        <li><a href="#testimonials" class="mobile-link">Reviews</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li><a href="#rooms" class="mobile-link book-link">Book Your Stay</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home" aria-label="Hero section">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=85"
+          alt="Azure Shores Resort beachfront at golden hour"
+          class="hero-img"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal">Est. 1998 · Maldives</p>
+        <h1 class="hero-title reveal">
+          <em>Where the</em><br />
+          Ocean Meets<br />
+          <em>Luxury</em>
+        </h1>
+        <p class="hero-tagline reveal">Unwind on pristine shores, immerse in crystal waters, and surrender to world-class hospitality.</p>
+        <div class="hero-actions reveal">
+          <a href="#rooms" class="btn btn-primary">Book Your Stay</a>
+          <a href="#about" class="btn btn-ghost">Discover More</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+
+      <div class="hero-badge" aria-hidden="true">
+        <svg viewBox="0 0 100 100" class="badge-ring">
+          <path id="badge-circle" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
+          <text><textPath href="#badge-circle">LUXURY RESORT · BEACHSIDE PARADISE · </textPath></text>
+        </svg>
+        <span class="badge-star">✦</span>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-images">
+            <div class="about-img-main">
+              <img
+                src="https://images.unsplash.com/photo-1540541338537-1220059169d0?w=800&q=80"
+                alt="Overwater bungalow at Azure Shores Resort"
+                loading="lazy"
+              />
+            </div>
+            <div class="about-img-secondary">
+              <img
+                src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=600&q=80"
+                alt="Azure Shores Resort poolside view"
+                loading="lazy"
+              />
+              <div class="about-stat">
+                <strong>25+</strong>
+                <span>Years of Excellence</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <p class="section-label">About the Resort</p>
+            <h2 id="about-heading" class="section-title">A Sanctuary Born<br /><em>From the Sea</em></h2>
+            <p class="about-lead">Nestled along a secluded crescent of white sand, Azure Shores is more than a resort — it's a living dream sculpted by the rhythm of tides.</p>
+            <p class="about-body">For over two decades, we have curated an experience that blends barefoot luxury with the raw beauty of the ocean. Every villa, every meal, every sunset has been thoughtfully designed to leave an indelible impression on your soul.</p>
+            <p class="about-body">From our signature overwater suites to our beachfront dining pavilions, Azure Shores invites you to slow down, breathe deep, and rediscover what it means to truly rest.</p>
+            <div class="about-pillars">
+              <div class="pillar">
+                <strong>48</strong>
+                <span>Private Villas</span>
+              </div>
+              <div class="pillar">
+                <strong>5★</strong>
+                <span>Rated Luxury</span>
+              </div>
+              <div class="pillar">
+                <strong>∞</strong>
+                <span>Memories Made</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ROOMS & PACKAGES ===================== -->
+    <section class="rooms" id="rooms" aria-labelledby="rooms-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Rooms & Packages</p>
+          <h2 id="rooms-heading" class="section-title">Your Perfect<br /><em>Retreat Awaits</em></h2>
+          <p class="section-subtitle">Each accommodation is a world unto itself — designed for privacy, comfort, and the kind of views that stay with you forever.</p>
+        </div>
+
+        <div class="rooms-grid">
+
+          <article class="room-card" aria-label="Garden Villa">
+            <div class="room-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80"
+                alt="Elegant Garden Villa interior at Azure Shores"
+                loading="lazy"
+              />
+              <span class="room-badge">Popular</span>
+            </div>
+            <div class="room-body">
+              <div class="room-top">
+                <h3 class="room-name">Garden Villa</h3>
+                <div class="room-price">
+                  <span class="price-from">from</span>
+                  <span class="price-amount">$480</span>
+                  <span class="price-per">/night</span>
+                </div>
+              </div>
+              <p class="room-desc">A lush retreat set amid tropical gardens, featuring a private plunge pool, king canopy bed, and open-air rain shower. The perfect balance of nature and comfort.</p>
+              <ul class="room-features" aria-label="Room features">
+                <li>Private Plunge Pool</li>
+                <li>King Canopy Bed</li>
+                <li>Garden & Partial Sea View</li>
+                <li>70 sqm · Sleeps 2</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline">Reserve Now</a>
+            </div>
+          </article>
+
+          <article class="room-card room-card--featured" aria-label="Ocean Suite">
+            <div class="room-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1602002418082-dd4a3f5b2b35?w=800&q=80"
+                alt="Oceanfront Suite with panoramic sea views at Azure Shores"
+                loading="lazy"
+              />
+              <span class="room-badge room-badge--gold">Signature</span>
+            </div>
+            <div class="room-body">
+              <div class="room-top">
+                <h3 class="room-name">Ocean Suite</h3>
+                <div class="room-price">
+                  <span class="price-from">from</span>
+                  <span class="price-amount">$890</span>
+                  <span class="price-per">/night</span>
+                </div>
+              </div>
+              <p class="room-desc">Wake to uninterrupted ocean horizons from your private deck. This statement suite features floor-to-ceiling glass, a soaking tub facing the sea, and butler service.</p>
+              <ul class="room-features" aria-label="Room features">
+                <li>Panoramic Ocean View</li>
+                <li>Glass-Walled Soaking Tub</li>
+                <li>Private Sun Deck</li>
+                <li>110 sqm · Butler Service</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Reserve Now</a>
+            </div>
+          </article>
+
+          <article class="room-card" aria-label="Overwater Bungalow">
+            <div class="room-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1439130490301-25e322d88054?w=800&q=80"
+                alt="Overwater Bungalow with direct lagoon access at Azure Shores"
+                loading="lazy"
+              />
+              <span class="room-badge">Ultimate Luxury</span>
+            </div>
+            <div class="room-body">
+              <div class="room-top">
+                <h3 class="room-name">Overwater Bungalow</h3>
+                <div class="room-price">
+                  <span class="price-from">from</span>
+                  <span class="price-amount">$1,480</span>
+                  <span class="price-per">/night</span>
+                </div>
+              </div>
+              <p class="room-desc">The pinnacle of lagoon living. Step off your private deck directly into turquoise waters. Glass floor panels, an infinity pool, and a sunset terrace define this iconic experience.</p>
+              <ul class="room-features" aria-label="Room features">
+                <li>Direct Lagoon Access</li>
+                <li>Glass Floor Panels</li>
+                <li>Private Infinity Pool</li>
+                <li>145 sqm · Full Butler</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline">Reserve Now</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Gallery</p>
+          <h2 id="gallery-heading" class="section-title">Life at<br /><em>Azure Shores</em></h2>
+        </div>
+      </div>
+
+      <div class="gallery-grid" role="list" aria-label="Resort photo gallery">
+
+        <div class="gallery-item gallery-item--tall" role="listitem">
+          <img src="https://images.unsplash.com/photo-1533760881669-80db4d7b341d?w=800&q=80" alt="Aerial view of the Azure Shores resort and lagoon" loading="lazy" />
+          <div class="gallery-caption">The Lagoon</div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="Sunset cocktails on the beachfront terrace" loading="lazy" />
+          <div class="gallery-caption">Sunset Bar</div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=800&q=80" alt="Outdoor infinity pool overlooking the ocean" loading="lazy" />
+          <div class="gallery-caption">Infinity Pool</div>
+        </div>
+        <div class="gallery-item gallery-item--wide" role="listitem">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&q=80" alt="Fine dining beachfront restaurant at Azure Shores" loading="lazy" />
+          <div class="gallery-caption">Beachfront Dining</div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80" alt="Luxury spa treatment room with ocean views" loading="lazy" />
+          <div class="gallery-caption">Spa & Wellness</div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=800&q=80" alt="Snorkeling in the crystal clear waters of the lagoon" loading="lazy" />
+          <div class="gallery-caption">Water Sports</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== AMENITIES ===================== -->
+    <section class="amenities" id="amenities" aria-labelledby="amenities-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Amenities</p>
+          <h2 id="amenities-heading" class="section-title">Everything You<br /><em>Could Desire</em></h2>
+          <p class="section-subtitle">Our resort is designed to anticipate your every need — from sunrise yoga to midnight swims.</p>
+        </div>
+
+        <div class="amenities-grid">
+
+          <div class="amenity-card">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M1.5 8.25L12 3l10.5 5.25M1.5 8.25l10.5 5.25m-10.5-5.25v7.5l10.5 5.25m0-12.75l10.5-5.25M12 13.5V21m10.5-12.75l-10.5 5.25M22.5 8.25v7.5L12 21"/>
+              </svg>
+            </div>
+            <h3>High-Speed WiFi</h3>
+            <p>Seamless gigabit connectivity throughout the resort and overwater structures.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 16.5A4.5 4.5 0 1 0 12 7.5a4.5 4.5 0 0 0 0 9zm0 0v1.5m0-10.5V6M6.75 12H5.25m13.5 0H17.25"/>
+              </svg>
+            </div>
+            <h3>Infinity Pools</h3>
+            <p>Three infinity-edge pools with panoramic ocean views and dedicated pool attendants.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 6v6l4 2m6-2a10 10 0 1 1-20 0 10 10 0 0 1 20 0z"/>
+              </svg>
+            </div>
+            <h3>Fine Dining</h3>
+            <p>Four signature restaurants serving locally inspired cuisine and global favorites.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 3c-4.97 0-9 3.185-9 7.115 0 2.557 1.522 4.82 3.889 6.115L6 21l4.5-2.25C11 18.916 11.493 19 12 19c4.97 0 9-3.185 9-7.115S16.97 3 12 3z"/>
+              </svg>
+            </div>
+            <h3>Private Beach</h3>
+            <p>850 meters of exclusive white-sand beach with personalized cabana service.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+              </svg>
+            </div>
+            <h3>Luxury Spa</h3>
+            <p>Award-winning Aqua Spa with 18 treatment rooms, sauna, and hydrotherapy suite.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/>
+              </svg>
+            </div>
+            <h3>Valet Parking</h3>
+            <p>Complimentary valet and secure covered parking for all resort guests.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6"/>
+              </svg>
+            </div>
+            <h3>Water Sports</h3>
+            <p>Snorkeling, scuba diving, paddleboarding, and sailing — all complimentary.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/>
+              </svg>
+            </div>
+            <h3>Yoga & Fitness</h3>
+            <p>Sunrise beach yoga, pilates classes, and a fully equipped ocean-view gym.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Guest Reviews</p>
+          <h2 id="testimonials-heading" class="section-title">Voices of<br /><em>Our Guests</em></h2>
+        </div>
+
+        <div class="testimonials-track-wrap">
+          <div class="testimonials-track" id="testimonials-track" aria-live="polite">
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">"Azure Shores redefined what luxury means to me. Every sunrise from our overwater bungalow was a painting. The staff remembered our names from day one and anticipated our every need."</p>
+              <footer class="testimonial-author">
+                <img src="https://i.pravatar.cc/80?img=12" alt="Sophia Williams" loading="lazy" />
+                <div>
+                  <strong>Sophia Williams</strong>
+                  <span>London, UK · Stayed 10 nights</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">"Our anniversary trip was absolutely flawless. The Ocean Suite had the most breathtaking views I have ever seen. The in-room dining at sunset was a moment we will treasure forever."</p>
+              <footer class="testimonial-author">
+                <img src="https://i.pravatar.cc/80?img=33" alt="Marco & Elena Rossi" loading="lazy" />
+                <div>
+                  <strong>Marco & Elena Rossi</strong>
+                  <span>Milan, Italy · Stayed 7 nights</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">"As a travel writer, I've stayed at over 200 resorts globally. Azure Shores belongs in a category of its own. The food, the wellness program, and the sheer beauty of the setting is unrivaled."</p>
+              <footer class="testimonial-author">
+                <img src="https://i.pravatar.cc/80?img=56" alt="James Harrington" loading="lazy" />
+                <div>
+                  <strong>James Harrington</strong>
+                  <span>New York, USA · Stayed 5 nights</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">"We brought our family of four and the kids never wanted to leave. The water sports team was exceptional with children, and the kids' club meant we actually got to relax too. Magical."</p>
+              <footer class="testimonial-author">
+                <img src="https://i.pravatar.cc/80?img=44" alt="Priya & Arjun Kapoor" loading="lazy" />
+                <div>
+                  <strong>Priya & Arjun Kapoor</strong>
+                  <span>Dubai, UAE · Stayed 8 nights</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">"The Aqua Spa is worth the trip alone. My therapist was extraordinarily skilled, and the overwater treatment room — with the sound of the ocean beneath you — is simply transcendent."</p>
+              <footer class="testimonial-author">
+                <img src="https://i.pravatar.cc/80?img=25" alt="Claire Fontaine" loading="lazy" />
+                <div>
+                  <strong>Claire Fontaine</strong>
+                  <span>Paris, France · Stayed 6 nights</span>
+                </div>
+              </footer>
+            </blockquote>
+
+          </div>
+
+          <div class="testimonials-nav" aria-label="Testimonial navigation">
+            <button class="testi-btn" id="testi-prev" aria-label="Previous review">&#8592;</button>
+            <div class="testi-dots" id="testi-dots" role="tablist" aria-label="Review indicators"></div>
+            <button class="testi-btn" id="testi-next" aria-label="Next review">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <p class="section-label">Get In Touch</p>
+            <h2 id="contact-heading" class="section-title">Begin Your<br /><em>Journey</em></h2>
+            <p class="contact-intro">Our reservations team is available 24 hours a day to tailor your perfect escape. Reach out — paradise is closer than you think.</p>
+
+            <ul class="contact-list" aria-label="Contact information">
+              <li>
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+9601234567" class="contact-value">+960 123 4567</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:reservations@azureshores.com" class="contact-value">reservations@azureshores.com</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Address</span>
+                  <address class="contact-value">North Malé Atoll, Maldives 20026</address>
+                </div>
+              </li>
+            </ul>
+
+            <a
+              href="https://wa.me/9601234567?text=Hello%2C%20I%27d%20like%20to%20make%20a%20reservation%20at%20Azure%20Shores%20Resort."
+              class="btn btn-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contact us on WhatsApp"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.524 5.845L.057 23.571l5.902-1.547A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.853 0-3.587-.498-5.084-1.366l-.362-.215-3.504.919.935-3.415-.236-.375A9.954 9.954 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <div class="contact-form-wrap" role="form" aria-label="Reservation inquiry form">
+            <h3 class="form-title">Send an Enquiry</h3>
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="checkin">Check-in</label>
+                  <input type="date" id="checkin" name="checkin" autocomplete="off" />
+                </div>
+                <div class="form-group">
+                  <label for="checkout">Check-out</label>
+                  <input type="date" id="checkout" name="checkout" autocomplete="off" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="room-type">Room Type</label>
+                <select id="room-type" name="room-type">
+                  <option value="">Select a room type</option>
+                  <option value="garden">Garden Villa — from $480/night</option>
+                  <option value="ocean">Ocean Suite — from $890/night</option>
+                  <option value="overwater">Overwater Bungalow — from $1,480/night</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Special Requests</label>
+                <textarea id="message" name="message" placeholder="Tell us about any special occasions or requirements…" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="form-submit">Send Enquiry</button>
+              <p class="form-note">We'll respond within 2 hours · No credit card required</p>
+            </form>
+            <div class="form-success" id="form-success" role="alert" aria-live="assertive" hidden>
+              <div class="success-icon">✓</div>
+              <h4>Enquiry Received!</h4>
+              <p>Thank you. Our team will be in touch within 2 hours to arrange your perfect stay.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="var(--navy)"/></svg>
+    </div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo--light" aria-label="Azure Shores Resort">
+          <span class="logo-icon">✦</span>
+          <span class="logo-text">Azure Shores</span>
+        </a>
+        <p class="footer-tagline">Where the ocean meets luxury.<br/>North Malé Atoll, Maldives.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <h4>Resort</h4>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#rooms">Rooms & Suites</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Experience</h4>
+          <ul>
+            <li><a href="#amenities">Aqua Spa</a></li>
+            <li><a href="#amenities">Dining</a></li>
+            <li><a href="#amenities">Water Sports</a></li>
+            <li><a href="#amenities">Wellness</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Plan</h4>
+          <ul>
+            <li><a href="#contact">Make a Reservation</a></li>
+            <li><a href="#contact">Group Bookings</a></li>
+            <li><a href="#contact">Honeymoons</a></li>
+            <li><a href="#contact">FAQ</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer-social">
+        <h4>Follow Our Story</h4>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="TripAdvisor">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.006 4.295c-2.67 0-5.34.634-7.357 1.901L0 6.388l.67.511C.25 7.606 0 8.407 0 9.257c0 2.176 1.765 3.942 3.942 3.942.837 0 1.614-.261 2.254-.704l1.355 1.426-.48.269c-.736.414-1.235 1.2-1.235 2.103 0 1.327 1.076 2.403 2.403 2.403.459 0 .887-.131 1.25-.354l.543.772c-.387.328-.637.811-.637 1.356 0 .979.794 1.773 1.773 1.773.457 0 .872-.173 1.185-.457.313.284.728.457 1.185.457.979 0 1.773-.794 1.773-1.773 0-.545-.25-1.028-.637-1.356l.543-.772c.363.223.791.354 1.25.354 1.327 0 2.403-1.076 2.403-2.403 0-.903-.499-1.689-1.235-2.103l-.48-.269 1.355-1.426c.64.443 1.417.704 2.254.704 2.176 0 3.942-1.765 3.942-3.942 0-.85-.25-1.65-.67-2.358l.67-.511-4.649-.192C17.346 4.929 14.676 4.295 12.006 4.295z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="copy-year"></span> Azure Shores Resort. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
